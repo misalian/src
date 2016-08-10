@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/section_padding_top" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:layout_marginRight="3dp"
+        android:id="@+id/likes"
+        android:layout_gravity="bottom|right" />
+
+    <ImageView
+        android:id="@+id/header_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:background="@mipmap/img_like"
+        android:clickable="false" />
+
+    <ImageView
+        android:id="@+id/header_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/iaa_logo"
+        android:clickable="false"
+        android:onClick="headerHome" />
+
+    <ImageView
+        android:id="@+id/header_cash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:background="@mipmap/img_dollar"
+        android:clickable="false" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:layout_marginLeft="3dp"
+        android:id="@+id/dollars"
+        android:layout_gravity="bottom|left" />
+
+</LinearLayout>

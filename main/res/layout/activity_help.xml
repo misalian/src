@@ -1,0 +1,485 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFFFFF"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="net.iamavailable.app.Help">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/linearLayout4">
+
+                <include layout="@layout/header" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IAMAVAILABLE \n HELP"
+                    android:id="@+id/like_intricate"
+                    android:layout_gravity="center|top"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlackText"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OUR PHILOSOPHY"
+                    android:id="@+id/ourphi"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorGreyText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IamAvailable is not a dating or matchmaking website. It can be used to meet like-minded people when you are available, travelling, away from home, killing time in a hotel lounge, at the airport, on a flight, or just visting a new place. There are no options to send chat mesages. It just breaks the ice. It forces people to be honest. It creates an opportunity to know who is willing to meet around your location. It lets you go and meet others in person, without hiding behind a screen or sending sketchy chat messages. Its a little out of the box. Its a reality show and only you are in it, not just watching it. Because no one can be available for ever, it allows you to chose the duration during which you will be available."
+                    android:id="@+id/ourphidetail"
+                    android:textColor="@color/colorGreyText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CONTACT US"
+                    android:id="@+id/contact"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorGreyText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="For any help or to contact us for any problems or to give us any comments, you can click on the mail icon below and send us your feedback."
+                    android:id="@+id/contactdetail"
+                    android:textColor="@color/colorGreyText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="REGISTERATION"
+                    android:id="@+id/registration"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorGreyText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Registeration to LUCID membership is free."
+                    android:id="@+id/registrationdetail"
+                    android:textColor="@color/colorGreyText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MEMBERSHIPS"
+                    android:id="@+id/membership"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorGreyText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="There are two types of memberships, Lucid and Intricate.\na. You can register for free as a Lucid Member. You can upgrade later to Intricate membership whenever you like. Lucid members can post and check. Lucid members can post for current durations only.\n b. Intricate members get 50 tokens when they register. Intricate members can post for future durations. Intricate members can also form groups."
+                    android:id="@+id/membershipdetail"
+                    android:textColor="@color/colorGreyText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LOGIN"
+                    android:id="@+id/login"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorGreyText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You can login after you have registered or you can use your facebook, twitter, google or linkedin accounts."
+                    android:id="@+id/logindetail"
+                    android:textColor="@color/colorGreyText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MY PROFILE"
+                    android:id="@+id/profile"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorGreyText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The data entered during registration is saved in your profile. You can view your own profile by clicking on your name. The profile can be edited and more information can be added as desired. You can also make your information private or public. Others see your profile when they click on your name. They can see only the information that you have chosen to make public."
+                    android:id="@+id/profiledetail"
+                    android:textColor="@color/colorGreyText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="POST I AM AVAILABLE"
+                    android:id="@+id/iamavailable"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorGreyText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A post can be made by made by providing the following onformation:\na. Post a message or specify your location\nb. Post a selfie (your picture at that moment), No gallery photos are allowed\nc. Post a location picture (a picture of your location/ distinguishible surroundings)\nd. Chose a duration for which you will be available. A post is not visible to others after the selected duration.\n\nYou can be considered available to others if you make a post with a picture of yourself and your current location to show that you are really available at the current location. Posts without real pictures or without real locations may not be considered by others as posts of a really available person and also can not be used by others to locate you. Help others to help yourself.\n\nA post can be deleted before the end of selected duration and a new post can be made. A post can also be deleted after the end of selected duration, so that it does not show in your history."
+                    android:id="@+id/iamavailabledetail"
+                    android:textColor="@color/colorGreyText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LOCATION SERVICES/ GLOBAL POSITIONING SERVICE"
+                    android:id="@+id/locationheader"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorGreyText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Iamavailable uses the GPS extensively and requires the phone and the GPS to provide location coordinates. Current systems on the smart phones might take 5 seconds to a minute to lock to a location. In case the GPS takes longer than expected times to lock on to your location, the root cause can vary from person to person and device to device, there are usually a few things you can do to help fix the problem. Here's what you should try."
+                    android:id="@+id/locationheaderdetail"
+                    android:textColor="@color/colorGreyText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1. Make Sure You're Using Assisted GPS. AGPS is a combination of GPS and internet (WLAN/WiFi/3G/4G). AGPS uses not only GPS satellites, but also nearby cell towers and Wi-Fi networks to lock onto your phone, and to acquire quick and accurate coordinates of your location you want to make sure you have the AGPS feature enabled on your phone. Some phones do not allow AGPS by default to conserve battery life."
+                    android:id="@+id/locdet1"
+                    android:textColor="@color/colorGreyText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2. Using AGPS, of course, can't always fix everything. In fact, sometimes your AGPS will keep trying to use satellites or towers that aren't nearby, which makes it hard to get a lock. If you're still having trouble, it’s advisable to stop and restart your GPS/ location services and the wifi connection."
+                    android:id="@+id/locdet2"
+                    android:textColor="@color/colorGreyText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3. Ensure that you clear all cashed GPS data."
+                    android:id="@+id/locdet3"
+                    android:textColor="@color/colorGreyText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4. Sometime a restart of the system/ phone may also be necessary."
+                    android:id="@+id/locdet4"
+                    android:textColor="@color/colorGreyText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5. Please note that in some countries the government allow only a degraded GPS."
+                    android:id="@+id/locdet5"
+                    android:textColor="@color/colorGreyText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="10dp" />
+                <TextView
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:text="6. Please ensure that the GPS antenna on your phone did not get damaged the last time you dropped your phone."
+                    android:id="@+id/locdet6"
+                    android:textColor="@color/colorGreyText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7. Please ensure that your compass is calibrated."
+                    android:id="@+id/locdet7"
+                    android:textColor="@color/colorGreyText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8. Please ensure that you calibrate the “pitch and roll”"
+                    android:id="@+id/locdet8"
+                    android:textColor="@color/colorGreyText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9. GPS antennas and software on some phones require rebooting, flushing and/or maintenance after every 30 days,
+depending on the frequency of usage."
+                    android:id="@+id/locdet9"
+                    android:textColor="@color/colorGreyText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="10dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CURIOS"
+                    android:id="@+id/curios"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorGreyText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="a. When you make a post, you earn a curio.\nb. If a post is deleted before the end of selected duration, the earned curio is lost.\nc. If a post is not deleted before the end of the selected duration, the earned curio is not lost."
+                    android:id="@+id/curiosdetail"
+                    android:textColor="@color/colorGreyText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CHECK WHO IS AVAILABLE"
+                    android:id="@+id/whoavailable"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorGreyText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="a. Only when you have earned at least one curio, you can check who is available at your location, in your city or in your country.\nb. You can check who is available by either selecting the diameter, location or an email address of someone you know.\nc. Posts of others who are available can be seen as a list or as a slide view."
+                    android:id="@+id/whoavailabledetail"
+                    android:textColor="@color/colorGreyText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SALUTE/ LIKE"
+                    android:id="@+id/slute"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorGreyText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="a. You can send a salute (like someone's post) with stars, only if you have earned at least one curio.\nb. After sending a salute, you can wait and see if the other person likes you back. Alternatively, you can take your chances and try to find the person at the posted location.\nc. If two persons like each others post, it means both are available to meet with each other.\nd. You will lose one curio when you send a salute."
+                    android:id="@+id/slutedetail"
+                    android:textColor="@color/colorGreyText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HISTORY"
+                    android:id="@+id/history"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorGreyText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A post is available for 2 or less hours. After the expiry of selected duration the post automatically becomes unavailable to others, but shows on your history page. You can delete your older posts if you like."
+                    android:id="@+id/historydetail"
+                    android:textColor="@color/colorGreyText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="POST I WILL BE AVAILABLE"
+                    android:id="@+id/iwillavailable"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorGreyText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Users with Intricate membership can post for future durations."
+                    android:id="@+id/iwillavailabledetail"
+                    android:textColor="@color/colorGreyText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MY FUTURE WHEREABOUTS"
+                    android:id="@+id/future"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorGreyText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Users with Intricate membership can view their future whereabouts."
+                    android:id="@+id/futuredetail"
+                    android:textColor="@color/colorGreyText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NOTIFICATIONS"
+                    android:id="@+id/notification"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorGreyText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You can chose to receive notifications on your mobile device or via email. Notifications can be sent for posts made, salutes sent, likes made, and when liked by others."
+                    android:id="@+id/notificationdetail"
+                    android:textColor="@color/colorGreyText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\n\n\n\n\n"
+                    android:id="@+id/spaces"
+                    android:textColor="@color/colorGreyText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

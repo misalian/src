@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFFFFF"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBG"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context="net.iamavailable.gui.MainMenuActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/menu_transparentImg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBG"
+        android:orientation="horizontal">
+
+        <include layout="@layout/header"
+            android:id="@+id/include2" />
+
+        <TextView
+            android:id="@+id/main_intricate"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:elegantTextHeight="true"
+            android:text=" \n "
+            android:textAlignment="center"
+            android:textColor="@color/colorBlackText"
+            android:layout_below="@+id/include2"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:id="@+id/main_third_check_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_intricate"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/section_padding_top"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/main_post_status"
+                android:layout_width="wrap_content"
+                android:paddingTop="@dimen/section_padding_small_top"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginRight="@dimen/text_padding"
+                android:text="POST \n I \n AM \n AVAILABLE \n AT \n THIS \n LOCATION"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorBlackText" />
+
+            <ImageView
+                android:id="@+id/img_vertical_line"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@mipmap/img_vertical_line" />
+
+            <TextView
+                android:id="@+id/main_check_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:paddingTop="@dimen/section_padding_top"
+                android:layout_marginLeft="@dimen/text_padding"
+                android:elegantTextHeight="true"
+                android:text="\n \n \n CHECK \n WHO \n IS \n AVAILABLE \n AT \n THIS \n LOCATION \n "
+                android:textAlignment="textStart"
+                android:textColor="@color/colorBlackText"
+                android:paddingBottom="@dimen/section_padding_small_top"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/main_message"
+            android:textSize="@dimen/font_small"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:elegantTextHeight="true"
+            android:text="YOU ARE IN NEW YORK UNITED STATES \n LOCATION BASED SERVICES ARE ON \n YOU ARE CONSIDERED AVAILABLE"
+            android:textAlignment="center"
+            android:textColor="@color/colorGreyText"
+            android:layout_below="@+id/main_third_check_post"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/main_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:elegantTextHeight="true"
+            android:paddingTop="@dimen/line_padding"
+            android:text="HELP"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlackText"
+            android:layout_below="@+id/main_message"
+            android:layout_alignParentBottom="false"
+            android:layout_centerHorizontal="true" />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressB"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/main_intricate" />
+    </RelativeLayout>
+</RelativeLayout>
+    </ScrollView>
+

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFFFFF"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:gravity="center_horizontal"
+    android:background="@color/colorBG"
+    tools:context="net.iamavailable.gui.MessageActivity">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/transparentImg"
+        android:background="@color/colorBG" >
+
+        <include layout="@layout/header" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/header"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:id="@+id/main_second_row_intricate">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SOHAIL MUGHAL \n INTRICATE"
+                android:id="@+id/message_intricate"
+                android:layout_gravity="center|top"
+                android:textAlignment="center"
+                android:elegantTextHeight="true"
+                android:textColor="@color/colorBlackText" />
+
+            <ImageView
+                android:layout_width="@dimen/widget_horizontal"
+                android:layout_height="@dimen/horizontal_line_size"
+                android:background="@mipmap/img_one_line"
+                android:layout_marginTop="@dimen/widget_padding_top"/>
+
+            <TextView
+                android:layout_width="@dimen/widget_horizontal"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/section_padding_small_top"
+                android:text="YOU HAVE LIKED \n GLORIA"
+                android:id="@+id/message_liked"
+                android:layout_gravity="center|top"
+                android:textAlignment="center"
+                android:elegantTextHeight="true"
+                android:textColor="@color/colorBlackText" />
+
+            <ImageView
+                android:layout_width="@dimen/widget_horizontal"
+                android:layout_height="@dimen/horizontal_line_size"
+                android:background="@mipmap/img_two_line"
+                android:layout_marginTop="@dimen/section_padding_small_top"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/section_padding_small_top"
+                android:text="NOW ITS UPTO YOU \n WHETHER YOU WAIT FOR THEM \n TO LIKE YOU BACK \n OR \n YOU TAKE YOUR CHANCES \n AND GO FIND THEM"
+                android:id="@+id/message_status"
+                android:layout_gravity="center|top"
+                android:textAlignment="center"
+                android:elegantTextHeight="true"
+                android:textColor="@color/colorBlackText" />
+
+            <ImageView
+                android:layout_width="@dimen/widget_horizontal"
+                android:layout_height="@dimen/horizontal_line_size"
+                android:background="@mipmap/img_one_line"
+                android:layout_marginTop="@dimen/section_padding_small_top" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/section_padding_small_top"
+                android:text="AFTER ALL THEY SAID \n THEY ARE AVAILABLE"
+                android:id="@+id/message_status2"
+                android:layout_gravity="center|top"
+                android:textAlignment="center"
+                android:elegantTextHeight="true"
+                android:textColor="@color/colorBlackText" />
+
+            <ImageView
+                android:layout_width="@dimen/widget_horizontal"
+                android:layout_height="@dimen/horizontal_line_size"
+                android:background="@mipmap/img_one_line"
+                android:layout_marginTop="@dimen/section_padding_small_top" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/section_padding_small_top"
+                android:text="YOU HAVE LOST ONE CURIO "
+                android:id="@+id/message_token"
+                android:layout_gravity="center|top"
+                android:textAlignment="center"
+                android:elegantTextHeight="true"
+                android:textSize="@dimen/font_small"
+                android:textColor="@color/colorGreyText" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
+    </ScrollView>

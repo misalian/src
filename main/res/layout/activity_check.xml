@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFFFFF"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:gravity="center_horizontal"
+    android:background="@color/colorBG"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="net.iamavailable.gui.CheckActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/transparent_bg"
+        android:gravity="center_horizontal"
+        android:background="@color/colorBG"
+        android:weightSum="1">
+
+        <include layout="@layout/header" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="CHECK \n WHO IS AVAILABLE"
+            android:id="@+id/check_intricate"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlackText" />
+
+        <Spinner
+            android:id="@+id/check_location"
+            android:layout_width="@dimen/widget_horizontal"
+            android:layout_height="20dp"
+            android:drawSelectorOnTop="true"
+            android:background="@color/colorTransparent"
+            android:spinnerMode="dropdown"
+            android:layout_marginTop="@dimen/section_padding_small_top"
+            android:textColor="@color/colorGreyText"/>
+
+        <ImageView
+            android:layout_width="@dimen/widget_horizontal"
+            android:layout_height="@dimen/horizontal_line_size"
+            android:id="@+id/border_line_two"
+            android:background="@mipmap/img_one_line" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:id="@+id/or"
+            android:paddingTop="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlackText" />
+
+        <EditText
+            android:layout_width="@dimen/widget_horizontal"
+            android:layout_height="wrap_content"
+            android:id="@+id/check_email"
+            android:hint="Email Address"
+            android:textColorHint="@color/colorBlackText"
+            android:textColor="@color/colorBlackText"
+            android:inputType="text"
+            android:background="@color/colorTransparent"
+            android:paddingStart="@dimen/text_padding"
+            android:textSize="@dimen/font_hint"
+            android:layout_marginTop="20dp" />
+
+        <ImageView
+            android:layout_width="@dimen/widget_horizontal"
+            android:layout_height="@dimen/horizontal_line_size"
+            android:id="@+id/border_line_four"
+            android:background="@mipmap/img_one_line" />
+
+    <RelativeLayout
+        android:layout_width="51dp"
+        android:layout_height="92dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHECK"
+            android:id="@+id/check_btn_check"
+            android:textColor="@color/colorBlackText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/section_padding_top"
+            android:paddingBottom="@dimen/widget_padding_top"
+            android:layout_gravity="center_horizontal" />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar3"
+            android:layout_gravity="center_horizontal"
+            android:visibility="invisible"
+            android:layout_centerVertical="true"
+            android:layout_alignStart="@+id/check_btn_check" />
+    </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="0dp"
+            android:text="YOU CANNOT CHECK \n IF YOU ARE NOT AVAILABE YOURSELF."
+            android:id="@+id/textView"
+            android:layout_marginTop="30dp"
+            android:textAlignment="center"
+            android:textSize="@dimen/font_small"
+            android:textColor="@color/colorGreyText"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.11" />
+
+    </LinearLayout>
+</RelativeLayout>
+    </ScrollView>

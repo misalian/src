@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:paddingTop="0dp"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GLORIA \n INTRICATE"
+        android:id="@+id/like_intricate"
+        android:layout_gravity="center|top"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlackText"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2015 - 01 - 01"
+        android:id="@+id/like_date"
+        android:textColor="@color/colorBlackText"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="@dimen/section_padding_small_top"
+        android:background="@color/colorTransparent"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/like_session"
+        android:text="15:23:34 - 16:23:34"
+        android:textColor="@color/colorBlackText"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorTransparent"
+        android:inputType="text" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/like_address"
+        android:text="New York, United States"
+        android:textColor="@color/colorBlackText"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorTransparent"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Alias Bored to the bone \nLimits are for brains not hearts"
+        android:id="@+id/like_alias"
+        android:layout_gravity="center|top"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlackText" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/like_images_box"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/section_padding_small_top">
+
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/like_pic_user"
+            android:layout_marginRight="@dimen/widget_padding_sides" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/like_pic_venue"
+            android:layout_marginLeft="@dimen/widget_padding_sides" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="THIS POST HAS 2 LIKES"
+        android:id="@+id/like_post_likes"
+        android:paddingTop="@dimen/widget_padding_top"
+        android:layout_gravity="center|top"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlackText" />
+
+</LinearLayout>

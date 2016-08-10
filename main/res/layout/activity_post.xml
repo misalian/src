@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFFFFF"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:gravity="center_horizontal"
+    android:background="@color/colorBG"
+    tools:context="net.iamavailable.gui.PostActivity">
+
+        <include layout="@layout/header" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/post_second_row_intricate"
+            android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="POST \n IAMAVAILABLE"
+            android:id="@+id/post_intricate"
+            android:layout_gravity="center|top"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlackText"
+            />
+<!--
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/post_location"
+                android:hint="Write a message or Specify location"
+                android:textColorHint="@color/colorGreyText"
+                android:textSize="@dimen/font_hint"
+                android:textColor="@color/colorBlackText"
+                android:paddingStart="@dimen/text_padding"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="@dimen/section_padding_top"
+                android:background="@color/colorTransparent"
+                android:inputType="text" />
+-->
+
+            <EditText
+                android:layout_width="222dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/post_location"
+                android:hint="Write a message or specify location"
+                android:textSize="@dimen/font_hint"
+                android:textColor="@color/colorBlackText"
+                android:textColorHint="@color/colorBlackText"
+                android:paddingStart="@dimen/text_padding"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="@dimen/section_padding_top"
+                android:background="@color/colorTransparent"
+                android:inputType="text" />
+
+            <ImageView
+                android:layout_width="@dimen/widget_horizontal"
+                android:layout_height="@dimen/horizontal_line_size"
+                android:background="@mipmap/img_one_line"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/post_second_row_intricate"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/post_images_box"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/section_padding_small_top">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/post_pic_user"
+                android:src="@mipmap/img_frame_front"
+                android:scaleType="fitXY"
+                android:layout_marginRight="@dimen/widget_padding_sides" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/post_pic_venue"
+                android:src="@mipmap/img_frame_back"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="@dimen/widget_padding_sides" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/post_images_box"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:id="@+id/linearLayout"
+            android:weightSum="1">
+
+           <!-- <Spinner android:id="@+id/post_mood_spinner"
+                android:layout_marginTop="@dimen/section_padding_small_top"
+                android:layout_width="@dimen/widget_horizontal"
+                android:layout_height="@dimen/widget_vertical"
+                android:background="@color/colorTransparent"
+                android:drawSelectorOnTop="true"
+                android:spinnerMode="dropdown"
+                android:textColor="@color/colorGreyText" />
+
+            <ImageView
+                android:layout_width="@dimen/widget_horizontal"
+                android:layout_height="@dimen/horizontal_line_size"
+                android:id="@+id/singleLineTwo"
+                android:background="@mipmap/img_two_line" /> -->
+            <Spinner
+                android:id="@+id/post_time_spinner"
+                android:layout_width="@dimen/widget_horizontal"
+                android:layout_height="20dp"
+                android:drawSelectorOnTop="true"
+                android:background="@color/colorTransparent"
+                android:spinnerMode="dropdown"
+                android:layout_marginTop="@dimen/widget_padding_top"
+                android:textColor="@color/colorGreyText"
+                android:layout_weight="1.05" />
+
+            <ImageView
+                android:layout_width="@dimen/widget_horizontal"
+                android:layout_height="@dimen/horizontal_line_size"
+                android:id="@+id/singleLineThree"
+                android:background="@mipmap/img_one_line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/colorBlackText"
+                android:id="@+id/time_spinner_view" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/section_padding_top"
+            android:gravity="center|top"
+            android:id="@+id/linearLayout3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="POST WITH MAP"
+                android:textColor="@color/colorBlackText"
+                android:id="@+id/post_btn_view" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="|"
+                android:id="@+id/post_buttons_seperator"
+                android:layout_marginLeft="@dimen/widget_padding_sides"
+                android:layout_marginRight="@dimen/widget_padding_sides" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="POST WITHOUT MAP"
+                android:textColor="@color/colorBlackText"
+                android:id="@+id/post_btn_post"
+                />
+        </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/progressBar"
+        android:layout_marginTop="62dp"
+        android:visibility="invisible"
+        android:layout_marginEnd="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/post_images_box" />
+
+    <ProgressBar
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/progressBar9"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/post_images_box" />
+
+</RelativeLayout>
+    </ScrollView>

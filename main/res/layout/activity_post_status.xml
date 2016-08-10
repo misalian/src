@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFFFFF"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:gravity="center_horizontal"
+    android:background="@color/colorBG"
+    tools:context="net.iamavailable.gui.PostStatus">
+
+   <!--    <include layout="@layout/header" /> -->
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="@dimen/section_padding_top"
+            android:id="@+id/post_second_row_intricate"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VIEW \nWITH LOCATION MAP"
+                android:id="@+id/post2_intricate"
+                android:layout_gravity="center|top"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlackText"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2015 - 01 - 01"
+                android:id="@+id/post2_date"
+                android:textColor="@color/colorBlackText"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="@dimen/section_padding_small_top"
+                android:background="@color/colorTransparent"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/post2_session"
+                android:text="15:23:34 - 16:23:34"
+                android:textColor="@color/colorBlackText"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/colorTransparent"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Alias Bored to the bone \nLimits are for brains not hearts"
+                android:id="@+id/post2_alias"
+                android:layout_gravity="center|top"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlackText" />
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+                android:id="@+id/post_images_box"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="@dimen/section_padding_small_top">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/post2_pic_user"
+                    android:src="@mipmap/img_frame_front"
+                    android:layout_marginRight="@dimen/widget_padding_sides" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/post2_pic_venue"
+                    android:src="@mipmap/img_frame_back"
+                    android:layout_marginLeft="@dimen/widget_padding_sides" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/section_padding_small_top"
+                android:text="Fazal Pakistan \nLong/Lat: 69.533302, 26.633301"
+                android:id="@+id/post2_location"
+                android:layout_gravity="center|top"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlackText" />
+
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/post2_map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/section_padding_top"
+            android:layout_marginRight="@dimen/section_padding_top"
+            android:layout_height="170dp"
+            android:layout_below="@+id/post_second_row_intricate"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@id/post2_map"
+            android:text="POST"
+            android:paddingTop="@dimen/section_padding_small_top"
+            android:textColor="@color/colorBlackText"
+            android:id="@+id/post2_btn_post"
+            />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar2"
+        android:visibility="invisible"
+        android:layout_below="@+id/post2_map"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please wait, Map is loading..."
+        android:id="@+id/textView5"
+        android:textColor="@color/colorBlackText"
+        android:layout_alignBottom="@+id/post2_btn_post"
+        android:layout_centerHorizontal="true" />
+
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/imageView"
+        android:background="@drawable/newmarker"
+        android:layout_marginTop="59dp"
+        android:visibility="invisible"
+        android:layout_below="@+id/post_second_row_intricate"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
+    </ScrollView>
